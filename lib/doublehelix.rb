@@ -17,3 +17,11 @@ def doublehelix(src)
     " " * offset + dict[s] * ("-" * dist) + "\n"
   end
 end
+
+def english(helix)
+    result = helix.gsub(/[ -]/, '').gsub(/(AT)|(TA)|(CG)|(GC)/, 'AT'=>"00", 'TA'=>"11", 'CG'=>"01", 'GC'=>"10").gsub(/\n/, '')
+    result.delete! "require\"doublehelix\""
+    result = [result]
+    result.pack("b*")
+
+end
