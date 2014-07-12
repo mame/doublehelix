@@ -7,8 +7,6 @@
 doublehelix obfuscates Ruby codes in Double-helix style.
 This is inspired by Perl's Acme::DoubleHelix.
 
-Test checkin here
-
 == FEATURES/PROBLEMS:
 
 
